@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="desktop.css">
+</head>
+<body>
+    <!-- <header></header> -->
+    <main>
+        <!-- <h1>Encriptador</h1> -->
+        <div class="container__logo">
+            <img class="logoAlura" src="./asset/Logo.png" alt="logo alura">
+        </div>
+        <section class="section__inputText">
+            <div class="container__inputText">
+                <textarea id="input_text" type="text" class="inputText" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="container__informative">
+                    <img class="iconInfo" src="./asset/bi_exclamation-circle-fill.png" alt="Icono de Informacion">
+                    <p id="warning" class="textInformative">Solo letras minúsculas y sin acentos</p>
+                </div>
+            </div>                
+            <div class="container__buttons">
+                <button id="btn_encrypt" class="button encrypt">Encriptar</button>
+                <button id="btn_decrypt" class="button decrypt">Desencriptar</button>
+            </div> 
+        </section>
+        <section class="section__outputText">
+            <div id="output_default" class="output--default">
+                <img class="output__imagen" src="./asset/Muñeco.png" alt="Dibujo de una persona mirando a traves de una lupa">
+                <div class="output__texto">
+                    <p class="output__negrita">Ningún mensaje fue encontrado</p>
+                    <p class="output__normal">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div id="output_enable" class="output--enable">
+                <textarea id="output_text" class="output__encrypted"></textarea>
+                <div class="container_btn_copy">
+                    <button id="btn_copy" class="button_copy">Copiar</button>
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- <footer></footer> -->
+    <script src="app.js"></script>
+</body>
+</html>
